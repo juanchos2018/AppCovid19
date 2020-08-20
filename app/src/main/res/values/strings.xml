@@ -1,0 +1,178 @@
+<resources>
+    <string name="app_name">Alerta Covid-19</string>
+    <string name="titulo_splash">Alerta Covid-19</string>
+    <string name="splash_mensaje">Conciencia, aislamiento del hogar y consejos de salud</string>
+    <string name="retry">Retry</string>
+
+    <string name="confirmed_total">Confirmados\ntotales</string>
+
+    <string name="death_total">Bajas\ntotales</string>
+    <string name="recovered_total">Recuperados\ntotales</string>
+
+    <string name="home_bottom_dialog_title">Coronavirus COVID-19 Casos Globales</string>
+
+    <string name="search_hint">Buscar…</string>
+    <string name="menu_global_cases">Casos Globales</string>
+    <string name="symptoms">Sintomas</string>
+    <string name="fever">Fiebre</string>
+    <string name="cough">Tos Seca</string>
+    <string name="sore_throat">Dolor de garganta</string>
+    <string name="runny_nose">Secreciones nasales</string>
+    <string name="difficulty_breathing">Dificultad para respirar</string>
+
+    <string name="scare_virus">Informate sobre los síntomas del Coronavirus</string>
+    <string name="consult_message">Tome sus precauciones y no ignore los síntomas. Consulte cuales son los síntomas hoy mismo.</string>
+    <string name="know_more">Saber mas</string>
+
+    <string name="menu_symptoms">Síntomas</string>
+    <string name="symptoms_title_1">¿Qué es la COVID-19?</string>
+    <string name="symptoms_desc_1">La COVID-19 es la enfermedad infecciosa causada por el coronavirus que se ha descubierto más recientemente. Tanto el nuevo virus como la enfermedad eran desconocidos antes de que estallara el brote en Wuhan (China) en diciembre de 2019.</string>
+    <string name="symptoms_title_2">¿Cuáles son los síntomas de la COVID-19?</string>
+    <string name="symptoms_desc_2">Los síntomas más comunes de la COVID-19 son fiebre, cansancio y tos seca. Algunos pacientes pueden presentar dolores, congestión nasal, rinorrea, dolor de garganta o diarrea. Estos síntomas suelen ser leves y aparecen de forma gradual. Algunas personas se infectan pero no desarrollan ningún síntoma y no se encuentran mal. La mayoría de las personas (alrededor del 80%) se recupera de la enfermedad sin necesidad de realizar ningún tratamiento especial. Alrededor de 1 de cada 6 personas que contraen la COVID-19 desarrolla una enfermedad grave y tiene dificultad para respirar. Las personas mayores y las que padecen afecciones médicas subyacentes, como hipertensión arterial, problemas cardiacos o diabetes, tienen más probabilidades de desarrollar una enfermedad grave. En torno al 2% de las personas que han contraído la enfermedad han muerto. Las personas que tengan fiebre, tos y dificultad para respirar deben buscar atención médica.</string>
+    <string name="symptoms_title_3">¿Sospecha que usted o alguien cercano a usted puede estar contagiado(a)?</string>
+
+
+    <string name="menu_emergency_guide">Guía de emergencia</string>
+
+    <string name="scare_emergency">Evita el contagio del Coronavirus</string>
+    <string name="scare_emergency_message">Si sospecha que esta contagiado(a) o alguien cercano a usted, consulte cuales son las medidas correspondientes a tomar.</string>
+
+    <string name="emergency_head">Evita el contagio del Coronavirus</string>
+    <string name="emergency_title_1">¿Cómo se propaga la COVID-19?</string>
+    <string name="emergency_desc_1">Una persona puede contraer la COVID-19 por contacto con otra que esté infectada por el virus. La enfermedad puede propagarse de persona a persona a través de las gotículas procedentes de la nariz o la boca que salen despedidas cuando una persona infectada tose o exhala. Estas gotículas caen sobre los objetos y superficies que rodean a la persona, de modo que otras personas pueden contraer la COVID-19 si tocan estos objetos o superficies y luego se tocan los ojos, la nariz o la boca. También pueden contagiarse si inhalan las gotículas que haya esparcido una persona con COVID-19 al toser o exhalar. Por eso es importante mantenerse a más de 1 metro (3 pies) de distancia de una persona que se encuentre enferma.La OMS está estudiando las investigaciones en curso sobre las formas de propagación de la COVID-19 y seguirá informando sobre los resultados actualizados.</string>
+    <string name="emergency_title_2">¿Puede transmitirse a través del aire el virus causante de la COVID-19?</string>
+    <string name="emergency_desc_2">Los estudios realizados hasta la fecha apuntan a que el virus causante de la COVID-19 se transmite principalmente por contacto con gotículas respiratorias, más que por el aire.</string>
+    <string name="emergency_title_3">¿Es posible contagiarse de COVID-19 por contacto con una persona que no presente ningún síntoma?</string>
+    <string name="emergency_desc_3">La principal forma de propagación de la enfermedad es a través de las gotículas respiratorias expelidas por alguien al toser. El riesgo de contraer la COVID-19 de alguien que no presente ningún síntoma es muy bajo. Sin embargo, muchas personas que contraen la COVID-19 solo presentan síntomas leves. Esto es particularmente cierto en las primeras etapas de la enfermedad.</string>
+    <string name="emergency_title_4">¿Qué puedo hacer para protegerme y prevenir la propagación de la enfermedad?</string>
+    <string name="emergency_desc_4">Manténgase al día de la información más reciente sobre el brote de COVID-19, a la que puede acceder en el sitio web de la OMS y a través de las autoridades de salud pública pertinentes a nivel nacional y local. Se han registrado casos en muchos países de todo el mundo, y en varios de ellos se han producido brotes. Las autoridades chinas y las de otros países han conseguido enlentecer o detener el avance de los brotes, pero la situación es impredecible y es necesario comprobar con regularidad las noticias más recientes.</string>
+    <string name="emergency_prevent_1">Lávese las manos a fondo y con frecuencia usando un desinfectante a base de alcohol o con agua y jabón.</string>
+    <string name="emergency_prevent_2">Mantenga una distancia mínima de 1 metro (3 pies) entre usted y cualquier persona que tosa o estornude.</string>
+    <string name="emergency_prevent_3">Evite tocarse los ojos, la nariz y la boca</string>
+    <string name="emergency_prevent_4">Tanto usted como las personas que les rodean deben asegurarse de mantener una buena higiene de las vías respiratorias. Eso significa cubrirse la boca y la nariz con el codo doblado o con un pañuelo de papel al toser o estornudar. El pañuelo usado debe desecharse de inmediato.</string>
+    <string name="emergency_prevent_5">Permanezca en casa si no se encuentra bien. Si tiene fiebre, tos y dificultad para respirar, busque atención médica y llame con antelación. Siga las instrucciones de las autoridades sanitarias locales.</string>
+
+    <string name="stagesOfCovid">Etapas de COVID-19</string>
+    <string name="Precauciones">Precauciones</string>
+
+    <string name="Stage1">Etapa 1: Comprender con el ejemplo de Ankur</string>
+    <string name="stage1_descp">En medio de los temores de Corona, Ankur llegó a su casa de Londres a la India. No tenía fiebre en el aeropuerto. Se le permitió irse a casa. Pero le dieron una declaración jurada en el aeropuerto que lo encarcelarían en su casa durante 14 días. Y cuando llegue la fiebre, se comunicará con este número. Después de irse a casa, cumplió con las condiciones de la declaración jurada. Fue encarcelado en la casa. Incluso mantuvo distancia de los miembros de la casa. Ankurki Mummy dijo: no te pasó nada. No te quedes aislado. Después de tantos días, obtendrá la comida de la casa, en la cocina, sirvo comida caliente y caliente. Esta vez, Ankur se enojó. Le gritó a mamá. Las lágrimas se derramaron en el ojo de la momia. Vebura estuvo de acuerdo.
+        Los brotes continúan siendo los más aislados (aislados).
+        En el día 6-7, los brotes comenzaron a tener síntomas como fiebre, tos fría. Llamó a la línea de ayuda. Se realizó la prueba de corona. Resultó positivo. Los miembros de su familia también fueron evaluados. Todos resultaron ser negativos. El área de un km fue la más cuestionada. Todos fueron probados.
+        Todos dijeron que nadie vio a Ankur saliendo de la casa. Como se había aislado bien, no extendió la corona a nadie más. Ankurki era más joven. Los síntomas de la corona fueron muy leves. Solo se produjo fiebre, resfriado, tos, dolor corporal, etc. Después de 7 días de tratamiento, se recuperó por completo y regresó a casa después de ser dado de alta del hospital. La madre, que se había sentido mal ayer, agradece hoy que no haya corona en toda la casa.
+        \ n \ nConclusión: esta es la primera etapa en la que la corona es solo en un hombre del extranjero. No se lo dio a nadie más.
+    </string>
+
+    <string name="Stage2"> Etapa 2- Comprende el ejemplo de Aniket que se convirtió en Corona positivo por error de otro </string>
+    <string name="stage2_descp"> Aniket, que vive en Mumbai, tenía fiebre y tos. El oficial de salud tomó toda la información de Aniket sobre sus últimos días. Esa información mostró que no fue al extranjero. Pero ha entrado en contacto con una persona que recientemente ha venido al extranjero. Fue a una joyería para comprar joyas anteayer. Su jefe Sethji había regresado recientemente de Italia.
+        Sethji vino del extranjero. No tenía fiebre en el aeropuerto. Por eso se le permitió irse a casa. Pero su declaración jurada se hizo para llenar, que permanecería completamente solo durante los próximos 14 días y no saldría de la casa. También se mantendrá alejado de los miembros de la familia.
+        Pero, en la búsqueda de ganancias, ondeó la bandera de esa declaración jurada llena en el aeropuerto. En casa, se encontró con el mayor amor, tocó a otros y se dejó tocar. Come tu verdura favorita por la noche y ve a tu joyería al día siguiente.
+        Al sexto día, Sethji tuvo fiebre. Su familia también tuvo fiebre. La vieja madre también estaba entre los miembros de la familia. Todo salió positivo en la investigación. El hombre que vino del extranjero se puso positivo, luego también hizo que los compañeros de casa fueran positivos. En Sethjidukan, 450 personas entraron en contacto, como sirvientes, clientes, etc.
+        Uno de ellos fue Aniket Bhitha.
+        Ahora: aislando a las 450 personas. Es una segunda etapa, incluso si hay algo positivo en ellos.
+        ¡El temor es que no todas estas 450 personas sepan a dónde han ido, cuántas personas deben haber conocido!
+        \ n \ nConclusión: la etapa general 2 significa que el hombre que ha obtenido una corona positiva no se fue al extranjero. Pero se ha puesto en contacto con una persona que recientemente ha venido al extranjero. </string>
+    <string name="Stage3"> Etapa 3: Comprenda el ejemplo de Ankita, ¿quién no sabía cómo se infectó? </string>
+    <string name="stage3_descp"> Ankitako fue hospitalizada debido a resfriado, tos, fiebre, su corona positiva llegó allí, pero nunca fue al extranjero. Tampoco entró en contacto con nadie que haya venido al extranjero recientemente.
+        Es decir, ¿ahora no conocemos la fuente de donde vino finalmente Ankita Corona?
+        En la Etapa 1, el hombre mismo vino del extranjero.
+        Etapa 2 sabía que había fuentes. Probamos a cada persona con la que entraron en contacto y los aislamos durante 14 días.
+        En la Etapa 3 no encontrará la fuente de coronavirus inferior.
+        \ n \ nConclusión: si no conocemos la fuente, no podemos capturarla. No podemos aislar a la persona. Donde no conocerá la fuente e inadvertidamente infectará a muchas personas. </string>
+    <string name="Stage4"> Etapa 4: Ejemplo de infinito ¿Quién lo explica enviando un video desde Italia? </string>
+    <string name="stage4_descp">Suponga que Anant, que vive en Delhi, está atrapado en Italia. Envió un video desde allí para advertir a la gente de India que si no se detiene la infección de la corona en segundos o en la tercera etapa, entonces ocurrirán condiciones como Italia.
+    En Italia, la cuarta etapa del virus ha alcanzado el nivel de masa por encima del nivel de la comunidad. Ahora ni el SARES puede detectar ni se entiende ninguna forma de detener la epidemia. Por eso en Italia se dice que dejar morir a los viejos, salvar a los niños y a los jóvenes.
+    Lo más importante, ¿por qué deberíamos temer a la etapa 3 y entender cómo surge?
+    Sethji entró en contacto con 450 personas. Tan pronto como se difundió la noticia de que era positivo, todos sus clientes, sirvientes, vecinos de la casa, vecinos de la tienda, lecheros, utensilios, chai wala … todos corrieron al hospital. El total fue de 440 personas.
+    Todavía no se han encontrado 10 personas. El equipo del Departamento de Policía y Salud los está buscando.
+    Si alguno de esos 10 ingresó a algún templo, etc., entonces este virus se propagará mucho.
+    \ n \ n Conclusión: Esta es la Etapa 3 donde no conoce la fuente.
+    El toque de queda público es una forma efectiva de prevenir la etapa 3. Foto: Obra del artista de arena Sudarshan Patnaik.
+    Paro de la etapa 3
+    El bloqueo de 14 días significa bloqueo completo. Poner el toque de queda público. Cierra la ciudad por completo durante 14 días. No dejes que nadie salga.
+    ¿Qué pasará con este bloqueo?
+    Todos los hombres están encerrados en la casa. En tal situación, un hombre que no ha entrado en contacto con una persona infectada está a salvo. La persona que es una fuente desconocida también está encerrada en su casa. Cuando se enferma, llegará al hospital. Se sabrá que esta es la fuente desconocida.
+        \ n \ nConclusión: esta fuente desconocida puede haber infectado a 4 personas más de su hogar, pero el resto de la ciudad sobrevivió. Si no hubiera un encierro, entonces no vendría a Sourcepakad y habría extendido la corona a miles de esas personas. Entonces, estas mil personas desconocidas lo repartirían entre millones. Así que toda la ciudad sobrevivió al encierro y la fuente desconocida fue capturada.</string>
+    <string name="menu_precauciones">Precauciones y medidas preventivas</string>
+
+
+    <string name="precu1">Aunque COVID-19 es una enfermedad altamente contagiosa, tomar las precauciones adecuadas puede ayudar a evitar que se infecte. El virus se propaga a través de pequeñas gotas desde la nariz o la boca de la persona afectada, cuando la persona estornuda o tose. Estas gotas pueden viajar más de 1 metro desde la fuente y pueden aterrizar en objetos y superficies. Otras personas pueden contraer el virus al tocar la superficie y luego tocarse los ojos, la boca o la nariz. El virus también puede ser atrapado al inhalar estas gotas si la distancia entre la persona afectada es menor a un metro.</string>
+    <string name="precu2"> No hay datos que muestren que el virus puede transmitirse a través del aire. Por lo tanto, siga estos pasos para protegerse y proteger a los que están a su alrededor. </string>
+    <string name="precu3"> Dado que la transmisión se produce principalmente a través de las manos, debe lavarlas con frecuencia y a fondo. Se recomienda usar agua y jabón cuando esté disponible; de ​​lo contrario, use un desinfectante para manos que contenga al menos 60% de alcohol y frótelo hasta que se seque. Lávese las manos con frecuencia con agua y jabón durante al menos 20 segundos o un desinfectante para manos a base de alcohol. </string>
+    <string name="precu4"> El virus puede entrar en contacto con su piel en cualquier momento, particularmente con sus manos. Si la piel contaminada tocó sus ojos, nariz o boca, el virus puede transferirse a su cuerpo y así infectarlo. No te toques la cara sin lavarte las manos primero. </string>
+    <string name="precu5"><![CDATA[Dependiendo del nivel de brote en su comunidad local, se recomienda mantener una distancia segura de al menos 1 metro (> 3 pies) de cualquier persona que esté tosiendo o estornudando. Si está cerca cuando la persona estornuda o tose, puede producir pequeñas gotas que puede inhalar e infectarse si la persona está infectada.]]></string>
+    <string name="precu6"> Si está tosiendo o estornudando, hágalo mientras se cubre la cara con un codo doblado o un pañuelo de mano. Esto ayudaría a prevenir la propagación de virus como la gripe, el resfriado o COVID-19. </string>
+
+
+    <string name="required"> * Obligatorio </string>
+    <string name="submit"> Enviar </string>
+    <string name="seldiaTitle"> Ponerse en cuarentena </string>
+    <string name="volutitle"> Vamos a traer una sonrisa en millones de caras juntas </string>
+    <string name="location"> Ubicación <font fgcolor='# ffff4444'> * </font> </string>
+    <string name="selvol"> Seleccione su opción preferida para el voluntariado <font fgcolor='# ffff4444'> * </font> </string>
+    <string name="myth_bustertxt"> Consejos de coronavirus para el público: destructores de mitos </string>
+    <string name="consult_message2"> Tomar un baño caliente no le impedirá atrapar COVID-19. Su temperatura corporal normal permanece entre 36.5 ° C y 37 ° C, independientemente de la temperatura de su baño o ducha. </string>
+    <string name="consult_message3"> Hemos compilado un FAQ (preguntas frecuentes) sobre el coronavirus, centrándonos en su impacto en la disponibilidad de nuestro producto y la cadena de suministro. Veamos. </string>
+    <string name="consult_message4"> El Gobierno de la India está tomando todas las medidas necesarias para garantizar que estamos preparados para enfrentar el desafío y la amenaza que representa la creciente pandemia de COVID 19: el Virus Corona. Con el apoyo activo de la gente de la India. Aquí tenemos una lista del número de estados de ayuda. </string>
+    <string name="myth_title"> ¿Qué es CoronaVirus? </string>
+    <string name="myth_des1"> Los coronavirus son una gran familia de virus que pueden causar enfermedades en animales o humanos. En los humanos, se sabe que varios coronavirus causan infecciones respiratorias que van desde el resfriado común hasta enfermedades más graves, como el síndrome respiratorio del Medio Oriente (MERS) y el síndrome respiratorio agudo severo (SARS). El coronavirus descubierto más recientemente causa la enfermedad del coronavirus COVID-19 </string>
+    <string name="youranswer"> Su respuesta </string>
+    <string name="email"> Correo electrónico <font fgcolor='# ffff4444'> * </font> </string>
+    <string name="diagnostico">AutoDiagnostico</string>
+    <string name="reportar_caso">Reportar Casos</string>
+    <string name="donaciones">Reportar Donaciones</string>
+    <string name="donationstitle"> Necesitamos su ayuda. Ayuda a otros donando lo que puedas </string>
+    <string name="diagnosticotitle"> Realica el autodiagnóstico de un posible caso infectado del Covid-19 y conoce el resultado de un diagnóstico referencial.</string>
+    <string name="reportar_casotitle"> Reporta un posible caso infectado del Covid-19 de una persona o de ti mismo</string>
+    <string name="forqueirs"> Para cualquier consulta, póngase en contacto con significado +51 928 188 705 </string>
+    <string name="selectoption"> Seleccione la opción que desea donar <font fgcolor='# ffff4444'> * </font> </string>
+    <string name="selectfoodq"> Seleccione la calidad de los alimentos </string>
+    <string name="cantidad"> "Cantidad" </string>
+    <string name="expirydate"> Fecha de vencimiento </string>
+    <string name="address"> Direccion </string>
+    <string name="yourname">Tú nombre</string>
+    <string name="feedback_send">Enviar</string>
+    <string name="quantity">Cantidad</string>
+    <string name="medname"> Nombre del medicamento </string>
+    <string name="medbrand"> Marca de medicina </string>
+
+    <string name="GuiaEmergencia"> Guia de emergencia </string>
+
+    <string name="selectmedtype"> Seleccione el tipo de medicamento </string>
+    <string name="amount"> Cantidad (INR) </string>
+    <string name="reasontodonate"> Motivo para donar </string>
+    <!--    <string name = "forqueirs"> Para cualquier consulta, póngase en contacto con significado +919584215603 </string>-->
+    <string name="next"> Siguiente </string>
+    <string name="get_started"> Comenzar </string>
+    <string name="skip"> Saltar </string>
+    <string-array name="doptions">
+        <item> Alimentos </item>
+        <item> Desinfectantes </item>
+        <item> Medicamentos </item>
+        <item> Fondos </item>
+    </string-array>
+    <string-array name="foodarray">
+        <item> Fresco </item>
+        <item> Bien </item>
+        <item> Promedio </item>
+    </string-array>
+    <string-array name="medtypearray">
+        <item> Líquido </item>
+        <item> Tabletas </item>
+        <item> Polvo </item>
+        <item> Otro </item>
+    </string-array>
+
+
+    <!--    AUTODIAGNOSTICO-->
+
+    <string name="howdoyou"> ¿Tiene congestión nasal? <font fgcolor='# ffff4444'> * </font> </string>
+    <string name="doyouhavefever"> ¿Tiene indigestión estomacal? <font fgcolor='# ffff4444'> * </font> </string>
+    <string name="tellusbodytemp"> Dinos la temperatura de tu cuerpo <font fgcolor='# ffff4444'> * </font> </string>
+    <string name="doyouhavecough"> ¿Tiene tos? En caso afirmativo, ¿qué tipo de tos tiene? <font fgcolor='# ffff4444'> * </font> </string>
+    <string name="areyoufa"> ¿Experimenta fatiga inusual? <font fgcolor='# ffff4444'> * </font> </string>
+    <string name="areyoubr"> ¿Experimenta falta de aliento inusual? <font fgcolor='# ffff4444'> * </font> </string>
+    <string name="whereareu"> ¿Presenta perdida del gusto o olfato? <font fgcolor='# ffff4444'> * </font> </string>
+
+
+</resources>

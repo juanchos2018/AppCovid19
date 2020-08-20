@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/gray</color>
+    <color name="colorPrimaryDark">@color/gray</color>
+    <color name="colorAccent">@color/redAccent</color>
+
+    <color name="gray">#303C5A</color>
+    <color name="redAccent">#FF1A4B</color>
+    <color name="black">#121212</color>
+    <color name="red">#E53935</color>
+    <color name="green">#43A047</color>
+
+    <color name="blueGrayDark">#263238</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blackOpacity50">#80121212</color>
+
+
+
+    <color name="dark_gray">#9b9a9a</color>
+    <color name="blue_link">#257df1</color>
+    <color name="verde">#28B38D </color>
+    <color name="dot_inactive">#aaa</color>
+    <color name="dot_active">#000000</color>
+    <color name="bgVerde">#08B34F</color>
+    <color name="bgAmarillo">#ECAE27</color>
+    <!--<color name="bgAzul">#0569C3</color>-->
+    <color name="bgAzul">#503AD7</color>
+    <color name="bgRojo">#EB0A1D</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="color_yelow">#e5be01</color>
+</resources>

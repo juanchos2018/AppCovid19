@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ede7f6"
+    tools:context=".Activity.ReportarCasoActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/reportar_caso"
+            app:titleTextAppearance="@style/ToolbarTextAppearance"
+            app:titleTextColor="@android:color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            app:layout_constraintTop_toBottomOf="@+id/appBar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ede7f6"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/c1"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/reportecaso_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+                </ImageView>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_below="@+id/c1"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/c2"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:clipToPadding="true"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="8dp"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/quicksand_semibold"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reportar_casotitle" />
+                    <TextView
+                        android:id="@+id/callforquery"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/forqueirs" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:textColor="@android:color/holo_red_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/required" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="4dp"
+                android:id="@+id/c3"
+                android:layout_below="@+id/c2"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="Quiero reportar un caso *"
+                        android:textColor="@android:color/black" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGrupoTipoCaso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="1">
+
+                        <RadioButton
+                            android:id="@+id/radioPropio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:checked="false"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="Propio"
+                            android:textSize="15dp" />
+
+                        <RadioButton
+                            android:id="@+id/radioFamiliar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:checked="false"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="Familiar"
+                            android:textSize="15dp" />
+
+                        <RadioButton
+                            android:id="@+id/radioConocido"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:checked="false"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="Conocido"
+                            android:textSize="15dp" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp"
+                android:id="@+id/c4"
+                android:layout_below="@+id/c3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/quicksand_medium"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apellidos del paciente *" />
+
+                    <EditText
+                        app:hintAnimationEnabled="true"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/txtApellidosPaciente"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@null"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:hint="@string/youranswer"
+                        app:hintEnabled="true"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp">
+                    </EditText>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp"
+                android:id="@+id/c5"
+                android:layout_below="@+id/c4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/quicksand_medium"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nombres del paciente *" />
+
+                    <EditText
+                        app:hintAnimationEnabled="true"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/txtNombresPaciente"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@null"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:hint="@string/youranswer"
+                        app:hintEnabled="true"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp">
+                    </EditText>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/c6"
+                android:layout_below="@+id/c5"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="Sexo *"
+                        android:textColor="@android:color/black" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGrupoSexo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="1">
+
+                        <RadioButton
+                            android:id="@+id/rbdm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:checked="false"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="Masculino"
+                            android:textSize="15dp" />
+
+                        <RadioButton
+                            android:id="@+id/rbdf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:checked="false"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="Femenino"
+                            android:textSize="15dp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp"
+                android:id="@+id/c7"
+                android:layout_below="@+id/c6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/quicksand_medium"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edad *" />
+
+                    <EditText
+                        app:hintAnimationEnabled="true"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/txtEdad"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:inputType="number"
+                        android:background="@null"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:hint="@string/youranswer"
+                        app:hintEnabled="true"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp">
+                    </EditText>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp"
+                android:id="@+id/c8"
+                android:layout_below="@+id/c7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/quicksand_medium"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Celular *" />
+
+                    <EditText
+                        app:hintAnimationEnabled="true"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/txtCelular"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:inputType="phone"
+                        android:background="@null"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:hint="@string/youranswer"
+                        app:hintEnabled="true"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp">
+                    </EditText>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp"
+                android:id="@+id/c9"
+                android:layout_below="@+id/c8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/quicksand_medium"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Distrito *" />
+
+                    <EditText
+                        app:hintAnimationEnabled="true"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/txtDistrito"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@null"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:hint="@string/youranswer"
+                        app:hintEnabled="true"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp">
+                    </EditText>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp"
+                android:id="@+id/c10"
+                android:layout_below="@+id/c9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/quicksand_medium"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Direccion *" />
+
+                    <EditText
+                        app:hintAnimationEnabled="true"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/txtDireccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@null"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:hint="@string/youranswer"
+                        app:hintEnabled="true"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp">
+                    </EditText>
+                    <Button
+                        android:id="@+id/btnubicar"
+                        android:text="ubicaicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp"
+                android:id="@+id/c11"
+                android:layout_below="@+id/c10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/quicksand_medium"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Otras observaciones *" />
+
+                    <EditText
+                        app:hintAnimationEnabled="true"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/txtOtrasObservaciones"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@null"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:hint="@string/youranswer"
+                        app:hintEnabled="true"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp">
+                    </EditText>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_below="@+id/c11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                app:backgroundTint="@color/redAccent"
+                app:cornerRadius="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

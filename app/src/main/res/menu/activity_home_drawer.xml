@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Principal">
+        <menu>
+            <item
+                android:id="@+id/nav_global_cases"
+                android:icon="@drawable/ic_global"
+                android:title="@string/menu_global_cases" />
+            <item
+                android:id="@+id/nav_sintomas"
+                android:icon="@drawable/ic_virus"
+                android:title="@string/symptoms" />
+            <item
+                android:id="@+id/nav_precauciones"
+                android:icon="@drawable/ic_virus"
+                android:title="@string/Precauciones" />
+            <item
+                android:id="@+id/nav_guia_emergencia"
+                android:icon="@drawable/ic_diagnostico"
+                android:title="@string/GuiaEmergencia" />
+            <item
+                android:id="@+id/nav_diagnostico"
+                android:icon="@drawable/ic_diagnostico"
+                android:title="@string/diagnostico" />
+            <item
+                android:id="@+id/nav_reportar_caso"
+                android:icon="@drawable/ic_diagnostico"
+                android:title="@string/reportar_caso" />
+            <item
+                android:id="@+id/nav_donacion"
+                android:icon="@drawable/ic_diagnostico"
+                android:title="@string/donaciones" />
+
+            <item
+                android:id="@+id/nav_noticias"
+                android:icon="@drawable/ic_diagnostico"
+                android:title="Noticias" />
+        </menu>
+    </item>
+</menu>

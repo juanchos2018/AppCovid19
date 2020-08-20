@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ede7f6"
+    tools:context=".Activity.DiagnosticoActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/diagnostico"
+            app:titleTextAppearance="@style/ToolbarTextAppearance"
+            app:titleTextColor="@android:color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            app:layout_constraintTop_toBottomOf="@+id/appBar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ede7f6"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/c1"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/diagnostico_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+                </ImageView>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_below="@+id/c1"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/c2"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:clipToPadding="true"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="8dp"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/quicksand_semibold"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diagnosticotitle" />
+                    <TextView
+                        android:id="@+id/callforquery"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/forqueirs" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:textColor="@android:color/holo_red_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/required" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/c3"
+                android:layout_below="@+id/c2"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="@string/tellusbodytemp"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/edtbodytempdisplay"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@null"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:hint="@string/youranswer"
+                        android:inputType="numberDecimal"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"></EditText>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="4dp"
+                android:id="@+id/c4"
+                android:layout_below="@+id/c3"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="@string/howdoyou"
+                        android:textColor="@android:color/black" />
+
+                    <RadioGroup
+                        android:id="@+id/feelradioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="1">
+
+                        <RadioButton
+                            android:id="@+id/hanrbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:checked="false"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="Si"
+                            android:textSize="15dp" />
+
+                        <RadioButton
+                            android:id="@+id/notwellrbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:checked="false"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="No"
+                            android:textSize="15dp" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="4dp"
+                android:id="@+id/c5"
+                android:layout_below="@+id/c4"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="@string/doyouhavefever"
+                        android:textColor="@android:color/black" />
+
+                    <RadioGroup
+                        android:id="@+id/fevelradioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="1">
+
+                        <RadioButton
+                            android:id="@+id/indi1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:checked="false"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="Si"
+                            android:textSize="15dp" />
+
+                        <RadioButton
+                            android:id="@+id/indi2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:checked="false"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="No"
+                            android:textSize="15dp" />
+
+
+                    </RadioGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="4dp"
+                android:id="@+id/c6"
+                android:layout_below="@+id/c5"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="@string/doyouhavecough"
+                        android:textColor="@android:color/black" />
+
+                    <RadioGroup
+                        android:id="@+id/coughradioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="1">
+
+                        <RadioButton
+                            android:id="@+id/rbd1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:checked="false"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="Sin Tos"
+                            android:textSize="15dp" />
+
+                        <RadioButton
+                            android:id="@+id/rbd2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:checked="false"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="Tos Seca"
+                            android:textSize="15dp" />
+
+                        <RadioButton
+                            android:id="@+id/rbd3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:checked="false"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="Tos con Flema"
+                            android:textSize="15dp" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="4dp"
+                android:id="@+id/c7"
+                android:layout_below="@+id/c6"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="@string/areyoufa"
+                        android:textColor="@android:color/black" />
+
+                    <RadioGroup
+                        android:id="@+id/fatigueradioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="1">
+
+                        <RadioButton
+                            android:id="@+id/rbdfatiga1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:checked="false"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="Si"
+                            android:textSize="15dp" />
+
+                        <RadioButton
+                            android:id="@+id/rbdfatiga2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:checked="false"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="No"
+                            android:textSize="15dp" />
+
+
+                    </RadioGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/c8"
+                android:layout_below="@+id/c7"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="@string/areyoubr"
+                        android:textColor="@android:color/black" />
+
+                    <RadioGroup
+                        android:id="@+id/breatheadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="1">
+
+                        <RadioButton
+                            android:id="@+id/yesrbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:checked="false"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="Si"
+                            android:textSize="15dp" />
+
+                        <RadioButton
+                            android:id="@+id/norbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:checked="false"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="No"
+                            android:textSize="15dp" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/c9"
+                android:layout_below="@+id/c8"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="@string/whereareu"
+                        android:textColor="@android:color/black" />
+
+                    <RadioGroup
+                        android:id="@+id/whereareadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="1">
+
+                        <RadioButton
+                            android:id="@+id/rbdgusto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:checked="false"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="Si"
+                            android:textSize="15dp" />
+
+                        <RadioButton
+                            android:id="@+id/rbdolfato"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:checked="false"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="No"
+                            android:textSize="15dp" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_below="@+id/c9"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                app:backgroundTint="@color/redAccent"
+                app:cornerRadius="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
